@@ -1,0 +1,250 @@
+.intro__content {
+    display: flex;
+}
+
+/* .container{
+    width: 1100px;
+    margin: 0 auto;
+} */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.title {
+    position: relative;
+    padding-left: 25px;
+    color: #48494D;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 7px;
+    background: url(../img/Shape.svg) no-repeat;
+    background-size: contain;
+    left: -1px;
+    top: 4px;
+
+}
+
+
+.input-search {
+    padding: 5px 70px 10px 15px;
+}
+
+.form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #000;
+    margin: 30px;
+}
+
+.form__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.form__list-item {
+    width: 50%;
+    padding-top: 5px;
+}
+
+.list-item__checkbox {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #cdcdcd;
+    position: relative;
+    margin-right: 15px;
+}
+
+.list-item__checkbox::before {
+    content: '';
+    width: 8px;
+    height: 6px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../img/tick.svg) no-repeat;
+    background-size: contain;
+}
+
+.list-item__input-label {
+    display: inline-flex;
+    align-items: flex-start;
+}
+
+.input-check:checked+.list-item__checkbox {
+    border-color: transparent;
+    background-color: #ff7931;
+
+}
+
+.form__button {
+    color: #eb9c0a;
+    border: none;
+    background-color: #fff;
+    text-decoration: underline;
+    margin-top: 5px;
+    margin-left: -5px;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 7px;
+}
+
+.form__button:hover {
+    background: linear-gradient(91.1deg, #9710E9 1.17%, #FD8D43 99.31%);
+    color: #fff;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+.form__disc {
+    font-weight: 600;
+    font-size: 16px;
+    width: 97px;
+    color: #48494D;
+    position: relative;
+    display: block;
+}
+
+.form__desceription {
+    display: flex;
+    align-items: center;
+}
+
+.form__desceription span {
+    background-color: grey;
+    margin-left: 10px;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    border-radius: 50px;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.form__main-list {
+    display: flex;
+    list-style: none;
+    margin-left: -40px;
+}
+
+.main-item__input-label {
+    display: inline-flex;
+    margin-right: 40px;
+}
+
+.form__title {
+    font-weight: 600;
+    font-size: 16px;
+    color: #48494D;
+    width: 55px;
+    height: 20px;
+    line-height: 19px;
+}
+
+.form__main-list-check {
+    list-style: none;
+    display: flex;
+    margin-left: -40px;
+    margin-bottom: 28px;
+
+}
+
+.main-list-check__label {
+    margin-right: 20px;
+    color: #fff;
+    border-radius: 1px;
+    background-color: #c0c0c2;
+}
+
+.form__button-title {
+    /* margin-right: 20px; */
+    padding: 8px 15px;
+    color: #fff;
+    border-radius: 1px;
+    background-color: #c0c0c2;
+    /* margin-left: -3px; */
+}
+
+.input-check:checked+.form__button-title {
+    background: linear-gradient(91.1deg, #9710E9 1.17%, #FD8D43 99.31%);
+}
+
+.main-list-check__labell {
+    margin-top: 5px;
+}
+
+.title-intro {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.form__items {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.form__items li {
+    width: 50%;
+
+}
+
+.form__items label {
+    display: inline-flex;
+}
+
+.socials {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #cdcdcd;
+    position: relative;
+    margin-right: 15px;
+}
+
+.socials::before {
+    content: '';
+    width: 8px;
+    height: 6px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../img/tick.svg) no-repeat;
+    background-size: contain;
+}
+
+.article-input:checked+.socials {
+    background-color: #ff7931;
+}
